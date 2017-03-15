@@ -10,8 +10,8 @@ void startHttpServer();
 void turnOnRelay();
 void turnOffRelay();
 
-const char* ssid = "Buddha";
-const char* password = "0305196001161955";
+const char* ssid = "YOUR_SSID";
+const char* password = "YOUR_PASSWORD";
 
 unsigned int localPort = 1900;      // local port to listen on
 
@@ -153,7 +153,7 @@ void prepareIds() {
 
   serial = String(uuid);
   persistent_uuid = "Socket-1_0-" + serial;
-  device_name = "cabbage";
+  device_name = "NAME_YOUR_DEVICE_HERE";
 }
 
 void respondToSearch() {
